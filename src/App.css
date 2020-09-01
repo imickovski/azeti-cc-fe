@@ -11,6 +11,11 @@
 form {
   display: flex;
   align-items: center;
+  font-weight: bold;
+}
+
+form label {
+  margin: 5px;
 }
 
 @media only screen and (max-width: 600px) {
