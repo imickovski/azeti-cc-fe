@@ -17,40 +17,38 @@ export default class Form extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        // alert(event.target.name)
         console.log(this.state.name)
         console.log(this.state.email)
     }
-
 
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
                 <label htmlFor='name'>
                     Name:
-        <input
+                 <input
                         id='name'
                         name='name'
                         type='text'
+                        required
                         value={this.state.name}
                         onChange={this.handleChange}
                     />
                 </label>
-                <br />
                 <label htmlFor='email'>
                     Email:
-        <input
+                  <input
                         id='email'
                         name='email'
                         type='email'
+                        required
                         value={this.state.email}
                         onChange={this.handleChange}
                     />
                 </label>
-                <br />
                 <Button type='submit' variant="contained" color="primary">
                     Save
-         </Button>
+                </Button>
             </form>
         )
     }

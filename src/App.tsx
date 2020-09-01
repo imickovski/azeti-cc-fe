@@ -21,6 +21,8 @@ function App() {
   return (
     <div className="App">
 
+      <h1>Your Profile Page</h1>
+
       <Avatar alt="Ivan Mickovski" src='https://c8.alamy.com/comp/P9MYWR/man-avatar-profile-P9MYWR.jpg' className={classes.large} />
 
       <h3>Name: (Place for the User's Name) </h3>
