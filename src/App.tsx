@@ -2,14 +2,14 @@ import React from 'react';
 import './App.css';
 import Avatar from '@material-ui/core/Avatar';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
-import Form from './components/Form.js'
+import Form from './components/Form.js';
 
 // Material Ui Styles for The Avatar
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     large: {
-      width: theme.spacing(9),
-      height: theme.spacing(9),
+      width: theme.spacing(20),
+      height: theme.spacing(20),
     },
   }),
 );
