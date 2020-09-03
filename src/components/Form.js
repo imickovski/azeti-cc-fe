@@ -30,10 +30,19 @@ export default class Form extends Component {
 
     render() {
         return (
-            <div>
-            <Button id='editButton' type='submit' variant="contained" color="primary" onClick={this.toggleEditForm}>Show Edit Form</Button>
+            <div className='App'>
+                <Button
+                    id='editButton'
+                    type='submit'
+                    variant="contained"
+                    color="primary"
+                    onClick={this.toggleEditForm}
+                >
+                    Show Edit Form
+                    </Button>
+
                 {this.state.editForm && (
-                    <form onSubmit={this.handleSubmit}>
+                    <form id='form' onSubmit={this.handleSubmit}>
                         <label htmlFor='name'>
                             Name:
                             <input
@@ -60,7 +69,8 @@ export default class Form extends Component {
                             Save
                          </Button>
                     </form>
-                )}
+                )
+                }
             </div>
         )
     }
