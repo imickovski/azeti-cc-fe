@@ -3,10 +3,9 @@
   flex-direction: column;
   align-items: center;
   padding: 25px;
-  /* background-position: center; */
-  background: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/383690/f7a121a3f7a929ffb4dbc3ae241b3b4b6eaaed1d.jpg") no-repeat center center fixed;
-  background-size: cover;
-  color: whitesmoke;
+  /* background: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/383690/f7a121a3f7a929ffb4dbc3ae241b3b4b6eaaed1d.jpg") no-repeat center center fixed;
+  background-size: cover; */
+  color: rgb(110, 177, 240);
 }
 
 #form {
@@ -18,11 +17,6 @@
 form label {
   margin: 7px;
 }
-
-/* #editButton {
-  display: flex;
-  align-items: center;
-} */
 
 /* For mobile the inputs are in column and the Button is smaller */
 @media only screen and (max-width: 600px) {

@@ -33,11 +33,13 @@ export default class Form extends Component {
             <div className='App'>
 
                 <Button type='submit' variant="contained" color="primary" onClick={this.toggleEditForm}>
-                    Show Edit Form
+                   Show Edit Form
                 </Button>
+
 
                 {this.state.editForm && (
                     <form id='form' onSubmit={this.handleSubmit}>
+
                         <label htmlFor='name'>
                             Name:
                             <input
@@ -49,6 +51,7 @@ export default class Form extends Component {
                                 onChange={this.handleChange}
                             />
                         </label>
+
                         <label htmlFor='email'>
                             Email:
                              <input
@@ -60,9 +63,10 @@ export default class Form extends Component {
                                 onChange={this.handleChange}
                             />
                         </label>
+
                         <Button className='btn' type='submit' variant="contained" color="primary">
                             Save
-                         </Button>
+                        </Button>
                     </form>
                 )
             }
