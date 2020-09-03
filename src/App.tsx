@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Avatar from '@material-ui/core/Avatar';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
-import Form from './components/Form.js';
+import Form from './components/Form';
 
 // Material Ui Styles for The Avatar
 const useStyles = makeStyles((theme: Theme) =>

@@ -8,7 +8,7 @@ export default class Form extends Component {
         editForm: false
     }
 
-    handleChange = event => {
+    handleChange = (event: { target: { name: any; value: any; }; }) => {
         const name = event.target.name;
         const value = event.target.value;
         this.setState({
@@ -16,7 +16,7 @@ export default class Form extends Component {
         });
     };
 
-    handleSubmit = (event) => {
+    handleSubmit = (event: { preventDefault: () => void; }) => {
         event.preventDefault();
         console.log(this.state.name)
         console.log(this.state.email)
@@ -31,15 +31,10 @@ export default class Form extends Component {
     render() {
         return (
             <div className='App'>
-                <Button
-                    id='editButton'
-                    type='submit'
-                    variant="contained"
-                    color="primary"
-                    onClick={this.toggleEditForm}
-                >
+
+                <Button type='submit' variant="contained" color="primary" onClick={this.toggleEditForm}>
                     Show Edit Form
-                    </Button>
+                </Button>
 
                 {this.state.editForm && (
                     <form id='form' onSubmit={this.handleSubmit}>
@@ -70,7 +65,7 @@ export default class Form extends Component {
                          </Button>
                     </form>
                 )
-                }
+            }
             </div>
         )
     }
